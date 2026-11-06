@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "osr"
+version = "0.1.0"
+description = "A short description of what your OSR tool does"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    # Add your external dependencies here, e.g.:
+    # "requests>=2.28.0",
+]
+
+# Optional: If you want users to be able to run `osr` directly from the terminal
+[project.scripts]
+osr = "osr.osr:main" 
+
